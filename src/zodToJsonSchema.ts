@@ -92,7 +92,7 @@ const zodToJsonSchema = <Target extends Targets = "jsonSchema7">(
   } else if (refs.target === "jsonSchema2019-09") {
     combined.$schema = "https://json-schema.org/draft/2019-09/schema#";
   }
-
+  delete combined.$schema
   return combined;
 };
 
